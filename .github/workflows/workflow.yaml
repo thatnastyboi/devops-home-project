@@ -33,6 +33,5 @@ jobs:
           push: ${{ github.ref == 'refs/heads/main' }}
           tags: |
             ghcr.io/${{ github.repository }}/devops-homeproject:1.0
-            ghcr.io/${{ github.repository }}/devops-homeproject:${{ github.sha }}
           cache-from: type=registry,ref=ghcr.io/${{ github.repository }}/devops-homeproject:1.0
           cache-to: type=inline
